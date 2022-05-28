@@ -4,4 +4,4 @@ This script is used for managing Windows Server 2019 backups. It can be implemen
 In our use case, we were dealing with a total of two backups every twenty-four hours from SERVER01 and SERVER02. In order to prevent Windows from overriding the previous day's backups, the script also takes the creation dates and stores them in a variable before assigning them to the two most recent backups.
 
 If Powershell or Task Scheduler returns a permission error, the following code can be used to allow the program to run:
- `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted`
+`Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted`
